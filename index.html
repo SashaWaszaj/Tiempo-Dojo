@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tiempo Dojo</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div>
+            <h1>Tiempo Dojo</h1>
+            </div>
+            <div>
+                <ul  class="nav-links">
+                    <li><a class="ciudad" href="#" onclick="displayAlert()">Asuncion</a></li>
+                    <li><a class="ciudad" href="#" onclick="displayAlert()">Encarnacion</a></li>
+                    <li><a class="ciudad" href="#" onclick="displayAlert()">Ciudad del Este</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="top">
+                <h2>San Jose</h2>
+                <div class="selecttemp">
+                    <label for="temp">Mostrar temperatura en</label>
+                    <select id="temp" name="temperatura">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="weatherDay">
+                    <div>
+                        <h3>Hoy</h3>
+                        <img class="img" src="./assets/some_rain.png" alt="some-rain">
+                        <p>Algo de lluvia</p>
+                    </div>
+                    <div class="grados">
+                        <p class="alta">24°</p>
+                        <p class="baja">18°</p>
+                    </div>
+                </div>
+                <div class="weatherDay">
+                    <div>
+                        <h3>Mañana</h3>
+                        <img class="img" src="./assets/some_sun.png" alt="some-sun">
+                        <p>Algo de sol</p>
+                    </div>
+                    <div class="grados">
+                        <p class="alta">27°</p>
+                        <p class="baja">19°</p>
+                    </div>
+                </div>
+                <div class="weatherDay">
+                    <div>
+                        <h3>Viernes</h3>
+                        <img class="img" src="./assets/some_clouds.png" alt="some-clouds">
+                        <p>Algo nubloso</p>
+                    </div>
+                    <div class="grados">
+                        <p class="alta">21°</p>
+                        <p class="baja">16°</p>
+                    </div>
+                </div>
+                <div class="weatherDay">
+                    <div>
+                        <h3>Sabado</h3>
+                        <img class="img" src="./assets/some_sun.png" alt="some-sun">
+                        <p>Algo de sol</p>
+                    </div>
+                    <div class="grados">
+                        <p class="alta">26°</p>
+                        <p class="baja">21°</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie-alert">
+                <div>
+                    <img class="cookie" src="assets/vi28_6_cookie_bite_cartoon_biscuit_food_white_rectangular-512.webp" alt="cookie">
+                </div>
+                <div>
+                    <p class="cookie-title">Detente! Hora de cookie</p>
+                    <p class="cookie-text">Usamos cookies (lastimosamente no de los que se comen) para personalizar 
+                        los contenidos y publicidades, para proveer caracteristicas de redes sociales y para
+                    analizar nuestro trafico. <a href="#">Leer mas...</a></p>
+                </div>
+                <div>
+                    <button onclick="hide()" id="btn">Acepto</button>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
